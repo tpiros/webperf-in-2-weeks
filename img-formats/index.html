@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="grid-container">
+        <div class="top">
+          <p>Select up to three image formats 👇</p>
+          <input type="checkbox" name="format" value="WebP" />WebP
+          <input type="checkbox" name="format" value="AVIF" />AVIF
+          <input
+            type="checkbox"
+            name="format"
+            value="Progressive JPG (Semi)"
+          />Progressive JPG (Semi)
+          <input
+            type="checkbox"
+            name="format"
+            value="Progressive JPG (Steep)"
+          />Progressive JPG (Steep)
+          <input type="checkbox" name="format" value="JPG" />Baseline JPG
+          <input type="checkbox" name="format" value="PNG" />PNG
+          <input type="checkbox" name="format" value="JXL" />JPEG XL
+          <button id="render">Make it happen!</button>
+        </div>
+
+        <div class="grid-item" id="format-0"></div>
+        <div class="grid-item" id="format-1"></div>
+        <div class="grid-item" id="format-2"></div>
+        <div class="grid-item" id="0"></div>
+        <div class="grid-item" id="1"></div>
+        <div class="grid-item" id="2"></div>
+      </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

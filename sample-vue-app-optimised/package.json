@@ -1,0 +1,20 @@
+{
+  "name": "sample-vue-app",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview --port 4173"
+  },
+  "dependencies": {
+    "bootstrap": "^5.2.0",
+    "lazysizes": "^5.3.2",
+    "puppeteer": "^16.0.0",
+    "vue": "^3.2.37",
+    "vue-router": "^4.1.2"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^3.0.1",
+    "vite": "^3.0.1"
+  }
+}

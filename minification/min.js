@@ -1,0 +1,2 @@
+const firstDiv=document.querySelector(".first");const btnHide=document.getElementById("hideFirst");const btnShow=document.getElementById("showFirst");btnHide.addEventListener("click",()=>{firstDiv.remove()});btnShow.addEventListener("click",()=>{if(!document.querySelector(".first")){const e=document.createElement("div");e.classList.add("first");const t=document.createElement("p");t.innerHTML="First <code>div</code> element";e.appendChild(t);const n=document.getElementById("main");n.insertBefore(e,n.firstChild)}});
+//# sourceMappingURL=min.js.map

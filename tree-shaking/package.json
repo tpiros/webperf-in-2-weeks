@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@rollup/plugin-strip": "^2.1.0",
+    "rollup-plugin-terser": "^7.0.2"
+  }
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/styles/styles.css" />
+    <link fetchpriority="high" rel="preload" href="img/1.jpeg" as="image" />
+  </head>
+  <body>
+    <nav-bar></nav-bar>
+    <h1>Prerender/Static Site Generation</h1>
+    <main class="container">
+      <div class="d-flex justify-content-center">
+        <div class="row py-3 shadow-5" id="gallery">
+          <div class="mainphoto">
+            <img class="active w-100" src="img/1.jpeg" />
+          </div>
+          <div class="col-3 mt-1"><img class="w-100" src="img/2.jpeg" /></div>
+          <div class="col-3 mt-1"><img class="w-100" src="img/3.jpeg" /></div>
+          <div class="col-3 mt-1"><img class="w-100" src="img/4.jpeg" /></div>
+          <div class="col-3 mt-1"><img class="w-100" src="img/5.jpeg" /></div>
+        </div>
+      </div>
+      <div class="justify-content-center">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+          mollis scelerisque tortor, rutrum facilisis lectus aliquam sit amet.
+          Curabitur sit amet metus et tortor pretium dictum in eget nunc.
+          Pellentesque ac dui purus. Nunc posuere erat non est semper vehicula.
+          Etiam sagittis tellus vel euismod vulputate. Curabitur tempus, turpis
+          sit amet lacinia scelerisque, nulla elit mollis felis, quis viverra
+          dolor tortor ac mi. Proin varius erat in nisl consequat, a convallis
+          odio euismod. Interdum et malesuada fames ac ante ipsum primis in
+          faucibus. Morbi nec diam libero. Vivamus ligula eros, dapibus id mi
+          consectetur, dapibus porttitor nunc.
+        </p>
+
+        <p>
+          Donec at nulla tincidunt, lacinia nisl nec, pulvinar leo. Quisque
+          molestie congue magna. Nullam hendrerit interdum leo, sed egestas
+          lorem mollis nec. In vitae arcu laoreet, scelerisque enim quis,
+          scelerisque ex. Ut sit amet ullamcorper risus, vitae auctor dui.
+          Suspendisse in lectus non est cursus pretium. Ut dapibus nisi vitae
+          tempor rhoncus. Mauris sed porttitor turpis, et aliquam felis. Donec
+          laoreet vitae nisl a dignissim. In augue turpis, tincidunt non ante a,
+          scelerisque mollis massa. Cras accumsan consectetur feugiat. Donec
+          porttitor maximus velit, sed blandit mi suscipit quis. Nam faucibus
+          sem lectus, non vestibulum odio facilisis et.
+        </p>
+
+        <p>
+          Maecenas pellentesque quis neque et aliquam. Morbi ante diam,
+          vestibulum et arcu sed, imperdiet hendrerit nulla. Donec accumsan
+          nulla sit amet massa rhoncus gravida. Phasellus eget lectus ac elit
+          suscipit venenatis a et felis. Nulla id lectus ipsum. Vestibulum
+          viverra cursus sagittis. Sed non vehicula mi. In in ipsum et enim
+          viverra euismod. Suspendisse aliquet tristique quam. Sed venenatis leo
+          at ornare aliquet.
+        </p>
+
+        <p>
+          Nullam ligula felis, elementum vel mi non, aliquam tincidunt leo.
+          Quisque mollis augue sit amet pellentesque venenatis. Phasellus
+          laoreet et dolor id sodales. Morbi commodo metus diam, ut elementum ex
+          pharetra sit amet. Morbi molestie, velit sed molestie semper, mauris
+          orci fringilla lectus, placerat lobortis velit lectus sit amet lectus.
+          Nam pulvinar nulla quis mauris suscipit, vitae lacinia diam blandit.
+          Integer ac mauris ullamcorper nisl egestas auctor in nec ante. Vivamus
+          a fermentum arcu. Nulla facilisi. Curabitur molestie risus vel orci
+          dapibus tempus. Nunc varius urna erat, quis sollicitudin felis
+          bibendum sit amet.
+        </p>
+
+        <p>
+          Ut a erat aliquet, eleifend metus quis, blandit libero. Curabitur quis
+          orci sed turpis pulvinar tempus eget at sem. Aliquam erat volutpat.
+          Nulla facilisi. Nulla ornare, nulla a venenatis hendrerit, lectus
+          justo iaculis ante, vel elementum nunc mauris id tortor. Aliquam id
+          eros malesuada, lacinia neque id, ullamcorper orci. Aliquam id
+          sagittis massa. Nullam id vestibulum urna. Proin vitae molestie elit.
+          Quisque pellentesque sem aliquet erat tempor placerat. Fusce mollis
+          urna nec risus aliquam luctus ac eget lacus. Cras pharetra, tortor non
+          varius sodales, leo sem lacinia leo, nec dapibus turpis orci quis dui.
+          Integer bibendum, diam sit amet imperdiet ultrices, odio nulla tempus
+          justo, a vulputate odio lectus vitae sapien. Nullam egestas tincidunt
+          ligula nec pretium. Fusce tristique faucibus turpis, id pharetra leo
+          dapibus a.
+        </p>
+      </div>
+    </main>
+    <script defer type="module" src="/main.js"></script>
+    <script defer src="/perf.js"></script>
+  </body>
+</html>

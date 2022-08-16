@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "express": "^4.18.1",
+    "pug": "^3.0.2"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "save-data",
+  "version": "1.0.0",
+  "main": "server.js",
+  "devDependencies": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

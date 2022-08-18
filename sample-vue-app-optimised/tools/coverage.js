@@ -12,7 +12,7 @@ if (args.includes('css')) {
     const browser = await puppeteer.launch();
     const page = await browser.newPage();
     await page.coverage.startCSSCoverage();
-    await page.goto('https://localhost:8080/article');
+    await page.goto('http://localhost/article');
     const css_coverage = await page.coverage.stopCSSCoverage();
 
     let css_used_bytes = 0;
@@ -46,7 +46,7 @@ if (args.includes('js')) {
     const browser = await puppeteer.launch();
     const page = await browser.newPage();
     await page.coverage.startJSCoverage();
-    await page.goto('https://localhost:8080/article');
+    await page.goto('http://localhost/article');
     const js_coverage = await page.coverage.stopJSCoverage();
 
     let js_used_bytes = 0;
@@ -64,7 +64,7 @@ if (args.includes('js')) {
 
     console.log(`Total Bytes of JS: ${js_total_bytes}`);
     console.log(`Used Bytes of JS: ${js_used_bytes}`);
-    fs.writeFile('./exported_js.css', covered_js, function (err) {
+    fs.writeFile('./exported_js.js', covered_js, function (err) {
       if (err) {
         return console.log(err);
       }

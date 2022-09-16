@@ -6,6 +6,7 @@ export default {
     file: './dist/bundle.js',
     format: 'esm',
   },
+  // plugins: [strip({ functions: ['console.*'] })],
   plugins: [strip({ functions: ['console.*'] }), terser()],
   // treeshake: false,
 };

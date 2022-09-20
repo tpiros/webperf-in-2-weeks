@@ -11,8 +11,8 @@ const router = createRouter({
       component: HomeView,
     },
     {
-      path: '/about',
-      name: 'about',
+      path: '/article',
+      name: 'article',
       component: ArticleView,
       // route level code-splitting
       // this generates a separate chunk (About.[hash].js) for this route

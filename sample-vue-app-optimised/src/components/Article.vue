@@ -31,9 +31,10 @@
         ></video>
 
         <img
-          src="https://res.cloudinary.com/tamas-demo/video/upload/c_scale,w_550/v1547201869/web-perf/IMG_0460.jpg"
+          src="https://res.cloudinary.com/tamas-demo/video/upload/c_scale,w_550,f_auto,q_auto/v1547201869/web-perf/IMG_0460.jpg"
           v-show="offline || this.connection === 'slow'"
         />
+        <p>click to load the video</p>
       </p>
       <p class="card-text">
         In the game between Hungary and France the audience witnessed a whopping
@@ -56,6 +57,13 @@
 </template>
 
 <script>
+if (window.Worker) {
+  const worker = new Worker('./src/scripts/worker.js');
+  worker.postMessage(43);
+  worker.onmessage = (e) => {
+    console.log('Just for fun: ', e.data);
+  };
+}
 import Carousel from './Carousel.vue';
 export default {
   name: 'Article',

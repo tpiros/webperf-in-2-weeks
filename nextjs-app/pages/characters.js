@@ -18,7 +18,6 @@ export default function Characters({ characters }) {
 export async function getStaticProps() {
   const res = await fetch('https://swapi.dev/api/people');
   const { results: characters } = await res.json();
-  console.log(characters);
   return {
     props: {
       characters,

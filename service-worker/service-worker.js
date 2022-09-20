@@ -1,5 +1,5 @@
-const files = ['/', '/index.html', '/app.js'];
-// const files = ['/', '/index.html', '/app.js', '/app.css'];
+// const files = ['/', '/index.html', '/app.js'];
+const files = ['/', '/index.html', '/app.js', '/app.css'];
 
 const cacheName = 'my-cache';
 self.addEventListener('install', (event) => {

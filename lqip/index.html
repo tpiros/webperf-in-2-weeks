@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A picture is worth a thousand ... kilobytes</title>
+    <script defer src="lqip.js"></script>
+  </head>
+  <body>
+    <img
+      data-src="https://res.cloudinary.com/tamas-demo/image/upload/f_auto,q_auto,w_400/zurich"
+      src="https://res.cloudinary.com/tamas-demo/image/upload/e_blur:1000,q_auto:low,w_400/zurich"
+    />
+
+    <!-- <picture>
+      <source
+        media="(max-width: 600px)"
+        srcset="
+          https://res.cloudinary.com/tamas-demo/image/upload/f_auto,q_auto,w_400/zurich
+        "
+        width="400"
+        height="452"
+      />
+      <img
+        src="https://res.cloudinary.com/tamas-demo/image/upload/f_auto,q_auto,w_800/zurich"
+        width="800"
+        height="904"
+        loading="lazy"
+        decoding="async"
+        style="
+          background-size: cover;
+          background-image: url(https://res.cloudinary.com/tamas-demo/image/upload/e_vectorize:colors:2:detail:0.2,w_400/zurich.svg);
+        "
+      />
+    </picture> -->
+
+    <!-- <img
+      src="https://res.cloudinary.com/tamas-demo/image/upload/f_auto,q_auto,w_800/zurich"
+      alt="Zurich, Switzerland"
+      width="800"
+      height="904"
+      srcset="
+        https://res.cloudinary.com/tamas-demo/image/upload/f_auto,q_auto,w_400/zurich 400w,
+        https://res.cloudinary.com/tamas-demo/image/upload/f_auto,q_auto,w_800/zurich 800w
+      "
+      sizes="(max-width: 600px) 400px, 800px"
+      loading="lazy"
+      decoding="async"
+      style="
+        background-size: cover;
+        background-image: url(https://res.cloudinary.com/tamas-demo/image/upload/e_vectorize:colors:2:detail:0.2,w_400/zurich.svg);
+      "
+    /> -->
+  </body>
+</html>
